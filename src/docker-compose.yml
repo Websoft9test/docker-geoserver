@@ -86,7 +86,7 @@ services:
     networks:
       - gs-cloud-network
     volumes:
-      - ./src/config:/opt/app/config
+      - ./config:/opt/app/config
     deploy:
       resources:
         limits:
