@@ -5,7 +5,9 @@ volumes:
   rabbitmq_data: # volume for rabbitmq data, so it doesn't create an anonymous one on each container
   
 networks:
-  gs-cloud-network:
+  default:
+    name: ${APP_NETWORK}
+    external: true
 #    driver: bridge
         
 services:
